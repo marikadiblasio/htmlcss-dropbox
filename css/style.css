@@ -102,7 +102,7 @@ display: block;
     background-color: var(--primary);
 }
 .border {
-    border: 1px solid var(--accessory-color);
+    border: 2px solid var(--accessory-color);
 }
 /* Margins and paddings*/
 .b-100-m {
@@ -126,11 +126,11 @@ display: block;
 .l-50-m {
     margin-left: 50px;
 }
-.l-10-p{
-    padding-left: 10px;
+.l-15-p{
+    padding-left: 15px;
 }
-.r-10-p {
-    padding-right: 10px;
+.r-15-p {
+    padding-right: 15px;
 }
 /* Header */
 header {
@@ -165,7 +165,6 @@ h1 {
     width: 30%;
     position: relative;
 }
-/* Da rivedere il posizionamento della freccetta - quando scala si rompe!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .arrow {
     position: absolute;
     bottom: 60px;
@@ -214,11 +213,9 @@ h1 {
     font-weight: 400;
     text-align: center;
     padding: 5px;
-    border: 1px solid var(--accessory-color);
 }
 .u-plan {
-    padding: 10px 5px;
-
+    padding: 10px 13px;
 }
 .italic {
     font-style: italic;
@@ -226,7 +223,7 @@ h1 {
 .card ul.b-20-p li {
     padding-bottom: 10px;
 }
-.card > .btn {
+.card .btn {
     width: 90%;
     text-align: center;
     margin: 0 auto;
@@ -235,6 +232,7 @@ hr {
     color: var(--accessory-color);
     width: 20%;
     margin-left: 0;
+    font-weight: 800;
 }
 .check::before{
     content: ' \2713';
