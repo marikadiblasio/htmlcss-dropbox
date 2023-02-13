@@ -9,11 +9,15 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 ul {
     list-style: none;
 }
 a {
     text-decoration: none;
+    display: inline-block;
 }
 img {
     width: 100%;
@@ -59,16 +63,19 @@ img {
     --blue-square: #0D2481;
     --yellow-square: #FFD830;
 }
-/* Background */
+/* Background and color */
 .light-bg {
     background-color: var(--light-color);
 }
 .prim-bg {
     background-color: var(--primary);
 }
+.dark-txt {
+    color: var(--dark-color);
+}
 /* Buttons */
 .btn {
-padding: 5px 10px;
+padding: 7px 10px;
 }
 .dark-btn {
     color: var(--primary);
@@ -78,9 +85,15 @@ padding: 5px 10px;
     color: var(--dark-color);
     background-color: var(--primary);
 }
-/* Margins */
+/* Margins and paddings*/
 .b-100-m {
     margin-bottom: 100px;
+}
+.b-40-p {
+    padding-bottom: 40px;
+}
+.t-40-p {
+    padding-top: 40px;
 }
 /* Header */
 header {
@@ -107,12 +120,27 @@ h1 {
     font-size: 4.5rem;
     font-weight: 800;
 }
+.sec-cont {
+    transform: translate(0, 50px);
+
+}
 .left-sec {
     width: 30%;
+    position: relative;
+}
+/* Da rivedere il posizionamento della freccetta - quando scala si rompe!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.arrow {
+    position: absolute;
+    bottom: 60px;
+    left: 5px;
+}
+.left-sec i {
+    font-size: 4rem;
 }
 .right-sec {
     width: 70%;
 }
+
 /* Footer */
 footer {
     background-color: var(--dark-color);
