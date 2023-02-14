@@ -50,15 +50,16 @@ img {
     align-items: center;
     align-content: center;
 }
-.align-start: {
-    align-items: flex-start;
+.align-base {
+    align-items: baseline;
 }
 /* .just-center {
     justify-content: center;
+}*/
+.just-start {
+    gap: 1rem;
+    justify-content: flex-start;
 }
-.just-around {
-    justify-content: space-around;
-} */
 /* Color styles */
 :root {
     --primary: #FFFFFF;
@@ -83,6 +84,9 @@ img {
 }
 .dark-txt {
     color: var(--dark-color);
+}
+.accessory-bg {
+    background-color: var(--accessory-color);
 }
 /* Buttons */
 .btn {
@@ -215,7 +219,7 @@ h1 {
     padding: 5px;
 }
 .u-plan {
-    padding: 10px 13px;
+    padding: 10px;
 }
 .italic {
     font-style: italic;
@@ -229,10 +233,11 @@ h1 {
     margin: 0 auto;
 }
 hr {
-    color: var(--accessory-color);
+    height: 1px;
     width: 20%;
     margin-left: 0;
     font-weight: 800;
+    border: 1px solid var(--accessory-color);
 }
 .check::before{
     content: ' \2713';
