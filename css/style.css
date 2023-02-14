@@ -117,6 +117,7 @@ img {
 padding: 7px 10px;
 display: block;
 }
+
 .max-btn {
     max-width: 250px;
     text-align: center;
@@ -173,12 +174,19 @@ header {
     height: 80px;
     top: 0;
     z-index: 1000;
-    padding: 10px;
+    padding: 0 10px;
     border-bottom: 2px solid var(--accessory-color);
 }
 header li {
-    padding: 10px;
+    padding: 29px 10px;
 }
+.b-bot {
+    border-bottom: 2px solid rgba(255,255,255,0.0);
+}
+.b-bot:hover {
+    border-bottom: 2px solid var(--dark-color);
+}
+
 header a {
     color: var(--dark-color);
 }
@@ -218,6 +226,7 @@ h1 {
     padding-left: 2rem;
     margin-bottom: 1rem;
 }
+/* Make the radio buttons invisible */
 .radio-container input {
     position: absolute;
     opacity: 0;
