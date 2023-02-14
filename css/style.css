@@ -275,7 +275,7 @@ hr {
     color: var(--dark-btn);
     font-weight: 800;
 }
-.large .left {
+.left {
     width: 65%;
 }
 /* Section partner */
@@ -321,7 +321,7 @@ blockquote {
 cite {
     font-style: normal;
 }
-/* small square */
+    /* small square */
 .small-square {
     width: 50%;
     height: 50%;
@@ -330,6 +330,15 @@ cite {
     filter: invert(1);
     width: 60%;
 }
+/* Free trial */
+#free-trial h2 {
+    color: var(--brown-square);
+}
+#free-trial div {
+    gap: 2rem;
+    padding: 50px;
+}
+
 /* Footer */
 footer {
     background-color: var(--dark-color);
