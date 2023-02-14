@@ -364,5 +364,12 @@ footer select {
 }
 .sel-cont {
     justify-content: flex-start;
-    padding-left: 2px;
+}
+.sel-cont *{
+    padding-left: 5px;
+}
+.fa-solid.fa-sort-up {
+    height: 4.5px;
+    display: inline-block;
+    font-size: .5rem;
 }
