@@ -116,8 +116,11 @@ img {
 .btn {
 padding: 7px 10px;
 display: block;
+transition: filter 1s;
 }
-
+.btn:hover {
+    filter: opacity(80%);
+}
 .max-btn {
     max-width: 250px;
     text-align: center;
@@ -362,6 +365,7 @@ hr {
 .central-square {
     background-color: var(--accessory-color);
     padding: 50px 30px;
+    overflow-y: auto;
 }
 .logo-des {
     width: 50%;
@@ -381,6 +385,7 @@ cite {
 .small-square {
     width: 50%;
     height: 50%;
+    transition: box-shadow 1s;
 }
 .small-square img {
     filter: invert(1);
@@ -396,6 +401,19 @@ cite {
 #free-trial div {
     gap: 2rem;
     padding: 50px;
+}
+/* Faq */
+summary {
+    list-style: none;
+    position: relative;
+}
+summary > span {
+    position: absolute;
+    top:0;
+    right: 0;
+}
+details + span {
+    padding-right: 10px;
 }
 /* Footer */
 footer {
