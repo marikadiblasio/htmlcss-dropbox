@@ -139,6 +139,9 @@ display: block;
 .border {
     border: 2px solid var(--accessory-color);
 }
+.border-bottom {
+    border-bottom: 2px solid lightgray;
+}
 /* Margins and paddings*/
 .b-100-m {
     margin-bottom: 100px;
@@ -338,6 +341,7 @@ cite {
     gap: 2rem;
     padding: 50px;
 }
+/* Faq */
 
 /* Footer */
 footer {
