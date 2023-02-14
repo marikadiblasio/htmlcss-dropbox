@@ -211,7 +211,55 @@ h1 {
     width: 70%;
 }
 /* Section plans */
-.radio {
+/* Trying to customize radio buttons */
+.radio-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  /* Style the radio btn */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;border: 1px solid lightgray;
+    background-color: var(--primary);
+}
+/* Style the selected radio btn */
+.radio-container input:checked ~ .checkmark {
+    background-color: var(--dark-btn);
+}
+/* Draw the in-radio btn -invisible when unselected */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Make the in-radio btn visible */
+.radio-container input:checked ~ .checkmark:after {
+    display: block;
+}
+/* Style the in-radio btn */
+.radio-container .checkmark:after {
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* .radio {
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
@@ -238,7 +286,7 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
     /* card */
 .card {
     width: 30%;
