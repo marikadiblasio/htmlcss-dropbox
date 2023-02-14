@@ -15,6 +15,9 @@ html {
 h2 {
     font-size: 2.4rem;
 }
+h3 {
+    font-size: 1.5rem;
+}
 ul {
     list-style: none;
 }
@@ -60,6 +63,9 @@ img {
     gap: 1rem;
     justify-content: flex-start;
 }
+.wrap {
+    flex-wrap: wrap;
+}
 /* Color styles */
 :root {
     --primary: #FFFFFF;
@@ -103,7 +109,10 @@ display: block;
 }
 .light-btn {
     color: var(--dark-color);
+    border: 1px solid var(--dark-color);
     background-color: var(--primary);
+    width: 200px;
+    text-align: center;
 }
 .border {
     border: 2px solid var(--accessory-color);
@@ -246,6 +255,21 @@ hr {
 }
 .large .left {
     width: 65%;
+}
+/* Section partner */
+.partner-text {
+    width: 40%;
+    padding: 5rem 3.4rem;
+}
+.partner-image {
+    width: 60%;
+}
+.col {
+    width: calc(100% / 3);
+    padding: 10px;
+}
+.col img {
+    vertical-align: bottom;
 }
 /* Footer */
 footer {
