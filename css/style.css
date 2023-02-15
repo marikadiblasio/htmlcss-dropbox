@@ -192,6 +192,36 @@ header li {
 header a {
     color: var(--dark-color);
 }
+/* Dropdown */
+.drop-li {
+    position: relative;
+    transition: border-bottom 0.4s;
+}
+.dropdown {
+    position: absolute;
+    top:80px;
+    left:0;
+    gap: 2.5rem;
+    background-color: var(--accessory-color);
+    width: 300%;
+    font-size: 0.8rem;
+    visibility: hidden;
+}
+.single-col {
+    width: 150%;
+}
+.left-drop, .right-drop {
+    padding: 10px;
+}
+.dropdown .left-drop li, .dropdown .right-drop li {
+    padding: 5px 0;
+}
+.drop-li:hover{
+    background-color: var(--accessory-color);
+}
+.drop-li:hover .dropdown {
+    visibility: visible;
+}
 /* Main */
 main {
     margin-top: 80px;
@@ -397,6 +427,9 @@ footer li a{
     color: var(--primary);
     padding-bottom: 13px;
 }
+footer .b-50-m li a:hover{
+    text-decoration: underline;
+}
 footer h4 {
     font-size: 1.2rem;
 }
@@ -419,4 +452,7 @@ footer select {
     height: 4.5px;
     display: inline-block;
     font-size: .5rem;
+}
+.social {
+    width: 10%;
 }

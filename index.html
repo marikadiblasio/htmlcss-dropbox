@@ -14,16 +14,52 @@
 <body>
     <!-- Header - fixed !!-->
     <header class="d-flex align-center prim-bg">
-        <!-- left navbar -->
+        <!-- left navbar similar to the origginal site-->
         <nav>
             <ul  class="d-flex align-center">
                 <li><img src="./img/logo-small.png" alt="logo"></li>
-                <li class="b-bot"><a href="#">Perché Dropbox</a></li>
-                <li class="b-bot"><a href="#">Funzioni</a></li>
-                <li class="b-bot"><a href="#plans">Piani e prezzi</a></li>
+                <li class="drop-li"><a href="#">Perché Dropbox</a>
+                    <div class="dropdown d-flex">
+                        <div class="left-drop">
+                            <h4>Panoramica</h4>
+                            <ul>
+                                <li><a href="#">Ispirati</a></li>
+                                <li><a href="#">Cosa dicono i clienti</a></li>
+                                <li><a href="#">Integrazione di app</a></li>
+                                <li><a href="#">Risorse</a></li>
+                            </ul>
+                        </div>
+                        <div class="right-drop">
+                            <h4>Lavora al meglio con Dropbox</h4>
+                            <ul>
+                                <li><a href="#">Ispirati</a></li>
+                                <li><a href="#">Cosa dicono i clienti</a></li>
+                                <li><a href="#">Integrazione di app</a></li>
+                                <li><a href="#">Risorse</a></li>
+                                <li><a href="#">Cosa dicono i clienti</a></li>
+                                <li><a href="#">Integrazione di app</a></li>
+                                <li><a href="#">Risorse</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="drop-li"><a href="#">Funzioni</a>
+                    <div class="dropdown single-col">
+                        <div class="left-drop">
+                            <ul>
+                                <li><a href="#">Creativi</a></li>
+                                <li><a href="#">Vendite</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Risorse Umane</a></li>
+                                <li><a href="#">IT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="drop-li"><a href="#plans">Piani e prezzi</a></li>
             </ul>
         </nav>
-        <!-- right navbar -->
+        <!-- right navbar similar to the mockup-->
         <nav>
             <ul class="d-flex align-center">
                 <li class="b-bot"><a href="#faq">Supporto</a></li>
@@ -307,6 +343,11 @@
                     <li><a href="#">funzioni</a></li>
                 </ul>
             </div>
+            <ul class="d-flex social b-20-p">
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+             </ul>
             <hr>
             <div class="sel-cont d-flex align-center t-40-p b-40-p">
                 <i class="fa-solid fa-earth-americas"></i>
