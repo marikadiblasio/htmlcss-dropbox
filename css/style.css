@@ -39,7 +39,6 @@ img {
     padding: 10px;
     margin: 0 auto;
 }
-
 /* Flexbox */
 .d-flex{
     display: flex;
@@ -185,11 +184,11 @@ header li {
 }
 .b-bot {
     border-bottom: 2px solid rgba(255,255,255,0.0);
+    transition: border-bottom 0.4s;
 }
 .b-bot:hover {
     border-bottom: 2px solid var(--dark-color);
 }
-
 header a {
     color: var(--dark-color);
 }
@@ -271,34 +270,6 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* .radio {
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-}
-.selected {
-    background-color: var(--dark-btn);
-}
-.radio + span {
-    vertical-align: middle;
-}
-.unselected {
-    border: 1px solid lightgray;
-    background-color: var(--primary);
-}
-.in-radio {
-    width: .75rem;
-    height: .75rem;
-    border-radius: 50%;
-    background-color: var(--primary);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
     /* card */
 .card {
     width: 30%;
@@ -406,15 +377,16 @@ cite {
 summary {
     list-style: none;
     position: relative;
+    font-weight: 700;
 }
 summary > span {
     position: absolute;
     top:0;
-    right: 0;
+    right: 10px;
 }
-details + span {
-    padding-right: 10px;
-}
+details[open] > summary > span {
+    transform: rotate(180deg);
+} 
 /* Footer */
 footer {
     background-color: var(--dark-color);
